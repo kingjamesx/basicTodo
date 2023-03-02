@@ -45,7 +45,7 @@ console.log(data)
 
 <template>
   <h1>#todo</h1>
-  <section>
+  <section class="sect">
  <div class="d-flex">
     <span @click="tab=TabA" :class="tab==TabA?'bb':''"><p>All</p></span>
     <span @click="tab=TabB" :class="tab==TabB?'bb':''"><p>Active</p></span>
@@ -59,6 +59,9 @@ console.log(data)
 </template>
 
 <style >
+h1{
+  text-align: center;
+}
 .d-flex{
   display: flex;
   gap: 10rem;
@@ -100,5 +103,25 @@ console.log(data)
 }
 .search{
   margin-top: 1.5rem;
+}
+@media (max-width:614px) {
+  .input-box{
+    max-width: 100%;
+  }
+  .search{
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  gap: 1rem;
+  }
+  .d-flex{
+    gap: 2rem;
+  }
+  .sect{
+    max-width: 400px;
+
+  }
 }
 </style>
