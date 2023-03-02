@@ -21,7 +21,7 @@ const props=defineProps({
 </script>
 <template>
 <div v-for="todo in data" class="list" :key="todo.id">
-    <section  v-if="todo.completed && !todo.remove" class="cont"><div class="d-flex2"><input type="checkbox" @change="action" :id="todo.id" :checked="todo.completed" ><p :class="todo.completed?'linethrough':''">{{todo.details}}</p> </div><span><button class="del" @click="remove" :id="todo.id">Delete</button></span></section> 
+    <section  v-if="todo.completed && !todo.remove" class="cont"><div class="d-flex2"><input type="checkbox" @change="action" :id="todo.id" :checked="todo.completed" ><p :class="todo.completed?'linethrough':''">{{todo.details}}</p> </div><span><button class="del t" @click="remove" :id="todo.id">Delete</button></span></section> 
   </div>
     <div class="all"> <button class="del" @click="removeAll">remove All</button></div>
 </template>
@@ -37,5 +37,13 @@ const props=defineProps({
   }
   .all{
     margin-top: 2rem;
+  }
+  @media (max-width:611px) {
+    .del{
+        padding: 0.5rem;
+    }
+    .t{
+        margin-left: 1rem;
+    }
   }
 </style>
