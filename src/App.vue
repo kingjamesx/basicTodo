@@ -79,6 +79,8 @@ h1{
   background-color: #2F80ED;
   border-radius: 12px;
   padding: 1rem 2rem;
+  color: #333;
+  font-weight: 700;
 }
 .input-box{
   height: 56px;
