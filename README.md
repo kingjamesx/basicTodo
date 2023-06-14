@@ -8,4 +8,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kingjamesx)](https://github.com/anuraghazra/github-readme-stats)
+
